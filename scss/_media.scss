@@ -1,0 +1,173 @@
+@media only screen and (max-width:1040px){
+  html{
+    scroll-behavior: smooth;
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+
+  header{
+    padding: 2% 8%;
+    display: flex;
+    & .nav{
+      img{
+        width: 30%;
+        margin-right: 5rem;
+      }
+     ul{ 
+      position: fixed;
+      z-index: 1000;
+      top: 100px;
+      right: -100%;
+      flex-direction: column;
+      padding: 5rem 2.5rem;
+         width: 65%;
+          height: 550px;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          background-color: $gray-color;
+          backdrop-filter: blur(7px);
+          box-shadow: 0 5px 30px rgba(100, 101, 102,0.6);
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+
+          // li:not(:last-child){
+          //   margin-bottom: 3rem;
+          // }
+
+          a{
+            color: $dark-color;
+            font-size: 2rem;
+          }
+
+
+          &.show{
+            right: 0;
+          }
+         
+     }
+  }
+
+  .open-menu{
+    display: block;
+    color: $gray-color !important;
+    cursor: pointer; 
+    background-color: $background-color;
+
+    &.notShowMenu {
+      display: none;
+      }
+  }
+  
+  .close-menu{
+    cursor: pointer;
+    color: $gray-color;
+    background-color: $background-color;
+
+    &.notShowMenu {
+      display: block;
+      }
+  }
+      }
+
+#showcase{
+  & .container{
+    & > div:first-child{
+      h2{
+        width: 70%
+        ;
+        img{
+          width: 19%;
+        }
+      }
+    }
+  }
+}
+
+#mask{
+  & .grid1{
+    div{
+      width: 100%;
+    }
+  }
+}
+}
+
+@media only screen and (max-width:550px){
+header{
+  & .nav{
+    ul{
+      width: 100%;
+      right: -150%;
+    }
+  }
+}
+
+#showcase{
+  & .container{
+    & > div:first-child{
+      h2{
+        width: 86%
+        ;
+        img{
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+
+#work{
+ & .grid{
+  img{
+    width: 65%;
+  }
+ }
+}
+
+#new{
+  & .grid{
+    img{
+      width: 65%;
+    }
+   }
+}
+
+#inslight{
+  & .container{
+    & .grid{
+      & >img:first-child{
+        width: 60%;
+      }
+    }
+  }
+}
+
+#mask{
+  & .grid1{
+    grid-template-columns: 100%;
+  }
+}
+
+#enter{
+  & .flex{
+    flex-direction: column;
+  }
+}
+footer{
+  & .flex{
+    flex-direction: column;
+    img{
+      width: 20%;
+      margin-top: 2rem;
+    }
+  }
+}
+}
